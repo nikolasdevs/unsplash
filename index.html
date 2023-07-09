@@ -1,0 +1,3441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Unsplash</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-top">
+          <div class="header-left">
+            <div class="logo-img">
+              <a href=""><img src="./images/unsplash_logo.svg" alt="logo" /></a>
+            </div>
+
+            <div class="search-box">
+              <ion-icon name="search"></ion-icon>
+              <input
+                type="search"
+                placeholder="Search high-resolution images"
+              />
+              <span class="material-symbols-outlined">
+                filter_center_focus
+              </span>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="nav-list">
+              <a href="#">Explore</a>
+              <a href="#">Advertise</a>
+              <a href="#">Unsplash+</a>
+            </div>
+            <div class="divide"></div>
+            <div class="header-rights">
+              <a href="#">Log in</a>
+              <button>Submit a photo</button>
+              <ion-icon name="menu"></ion-icon>
+            </div>
+          </div>
+          <div class="header-menu-icon">
+            <ion-icon name="menu"></ion-icon>
+          </div>
+        </div>
+
+        <div class="menu-list">
+          <ul>
+            <li><a href="#">Editorial</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#">Wallpapers</a></li>
+            <li><a href="#">3D Renders</a></li>
+            <li><a href="#">Nature</a></li>
+            <li><a href="#">Textures & Patterns</a></li>
+            <li><a href="#">Architecture & Interiors</a></li>
+            <li><a href="#">Film</a></li>
+            <li><a href="#">Street Photography</a></li>
+            <li><a href="#">Experimental</a></li>
+            <li><a href="#">Animals</a></li>
+            <li><a href="#">Fashion & Beauty</a></li>
+            <li><a href="#">Business & Work</a></li>
+            <li><a href="#">Food & Drink</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <div class="menu-icon"><ion-icon name="chevron-forward"></ion-icon></div> -->
+      <div class="hero">
+        <div class="hero-box">
+          <div class="hero-img"></div>
+          <div class="hero-txt">
+            <div class="hero-txt-header">
+              <h3>Unsplash</h3>
+            </div>
+            <div class="hero-txt-p">
+              <p>
+                The internet's source for visuals. <br />Powered by creators
+                everywhere.
+              </p>
+            </div>
+            <div class="search-box hero-search">
+              <ion-icon name="search"></ion-icon>
+              <input
+                type="search"
+                placeholder="Search high-resolution images"
+              />
+              <span class="material-symbols-outlined">
+                filter_center_focus
+              </span>
+            </div>
+            <div class="hero-txt-trending">
+              <p>
+                <span>Trending:</span> flower, wallpapers, backgrounds, happy,
+                love
+              </p>
+            </div>
+          </div>
+          <div class="hero-bottom">
+            <p>Photo by <a href="#" target="_blank">Martin Marttz</a></p>
+            <p>
+              Read more about the
+              <a href="#" target="_blank">Unsplash License</a>
+            </p>
+            <div class="hero-bottom-img">
+              <a href=""> <img src="./images/square.svg" alt="" /></a>
+              <a href="#" target="_blank">Everything to Sell Anything</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="body-main">
+        <div class="img">
+          <div class="img-box">
+            <img src="./images/photo-1.avif" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-2.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-3.avif" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-4.avif" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-5.avif" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-6.avif" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-7.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-8.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-9.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-10.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-40.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-39.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-38.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-37.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-36.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-35.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-53.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-41.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-32.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-31.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <div class="img-box">
+            <img src="./images/photo-11.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-12.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-13.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-14.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-15.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-16.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-17.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-18.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-19.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-20.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-50.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-49.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-48.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-47.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-46.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-45.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-44.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-43.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-42.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-33.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <div class="img-box">
+            <img src="./images/photo-21.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-22.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-23.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-24.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-25.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-26.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-27.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-28.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-29.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-30.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-60.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-59.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-58.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-57.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-56.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-55.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-54.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-34.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-52.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./images/photo-51.jpg" alt="" />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <div class="top-overlay">
+                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="add"></ion-icon>
+              </div>
+              <div class="bottom-overlay">
+                <div class="left-bottom">
+                  <div class="profile">
+                    <img src="./images/profile-1.avif" alt="" />
+                  </div>
+                  <div class="profile-txt">
+                    <div class="profile-name">
+                      <p>Venti Views</p>
+                    </div>
+                    <div class="profile-desc">
+                      <p>Available for hire</p>
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-bottom">
+                  <ion-icon name="arrow-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="new-overlay-content">
+              <div class="new-top">
+                <div class="profile">
+                  <img src="./images/profile-1.avif" alt="" />
+                </div>
+                <div class="profile-txt">
+                  <div class="profile-name">
+                    <p>Venti Views</p>
+                  </div>
+                  <div class="profile-desc">
+                    <p>Available for hire</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="new-bottom-overlay">
+                <div class="left-bottom-overlay">
+                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="right-bottom-overlay">
+                  <button>Download</button>
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
